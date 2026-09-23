@@ -153,7 +153,7 @@
 
       <div class="flex items-center space-x-3">
         <!-- Floating Audio Pill in Header -->
-        <button id="headerMusicBtn" onclick="toggleWeddingMusic()" title="Play Wedding Melodies" class="flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-gold/50 bg-white/80 hover:bg-white text-neutral-800 shadow-sm transition-all text-xs">
+        <button id="headerMusicBtn" onclick="toggleWeddingMusic()" title="Love Me Like You Do" class="flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-gold/50 bg-white/80 hover:bg-white text-neutral-800 shadow-sm transition-all text-xs">
           <i data-lucide="music" class="w-3.5 h-3.5 text-gold-dark"></i>
           <span id="headerMusicText" class="text-[10px] tracking-widest uppercase font-semibold text-neutral-700 hidden sm:inline">Music</span>
           <div id="headerVisualizer" class="hidden items-end space-x-0.5 h-3 ml-1">
@@ -197,23 +197,15 @@
         </div>
 
         <!-- HERO MONOGRAM / LOGO DISPLAY PLACEHOLDER -->
-        <!-- Instructions: To use your custom graphic, place '0.png' in the root directory. -->
         <div class="w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-6 relative flex items-center justify-center rounded-full p-1.5 border-2 border-gold/70 bg-white shadow-regal transition hover:scale-105 duration-500 reveal-scroll">
-          <!-- Image Element -->
           <img src="0.png" alt="Anand and Roshni Logo" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
           
-          <!-- High-End Vector SVG Monogram Fallback -->
           <div class="hidden w-full h-full flex items-center justify-center rounded-full bg-ivory-50 p-2 border border-dashed border-gold/40">
             <svg viewBox="0 0 200 200" class="w-full h-full">
-              <!-- Laurel Wreath & Royal Arch -->
               <circle cx="100" cy="100" r="92" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8"/>
               <circle cx="100" cy="100" r="84" fill="none" stroke="#9F7832" stroke-width="0.75"/>
-              
-              <!-- Crown Crest -->
               <path d="M85 44 L92 34 L100 42 L108 34 L115 44 Z" fill="#D4AF37"/>
               <circle cx="100" cy="30" r="2.5" fill="#9F7832"/>
-
-              <!-- Monogram Initials A & R -->
               <text x="74" y="124" font-family="'Cormorant Garamond', serif" font-size="64" font-weight="700" fill="#0D1B2A" text-anchor="middle">A</text>
               <text x="100" y="110" font-family="'Great Vibes', cursive" font-size="44" fill="#D4AF37" text-anchor="middle">&amp;</text>
               <text x="126" y="126" font-family="'Cormorant Garamond', serif" font-size="64" font-weight="700" fill="#9F7832" text-anchor="middle">R</text>
@@ -239,7 +231,6 @@
           "Two souls, two heartbeats, stepping forward in the light of sacred vows, eternal companionship, and family blessings."
         </p>
 
-        <!-- Date and Location Pill Indicators -->
         <div class="flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-widest text-[#0D1B2A] font-medium mb-10 reveal-scroll">
           <span class="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-5 py-2 rounded-full border border-gold/30 shadow-sm">
             <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold-dark"></i>
@@ -251,7 +242,6 @@
           </span>
         </div>
 
-        <!-- Interactive Envelope Seal Card Reveal -->
         <div class="bg-white/85 backdrop-blur-md rounded-2xl p-6 sm:p-7 max-w-md mx-auto border border-gold/30 shadow-regal reveal-scroll">
           <p class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-3 font-semibold">
             Interactive Wedding Seal
@@ -261,7 +251,6 @@
             <span id="envelopeBtnText">Tap To Open Wedding Card</span>
           </button>
 
-          <!-- Revealed Secret Card Drawer -->
           <div id="revealedWeddingCard" class="hidden mt-5 pt-5 border-t border-gold/20 text-center transition-all duration-500">
             <span class="font-cinzel text-xs tracking-widest text-gold-dark font-bold uppercase block">
               Shubho Bibaho • Shubho Kamona
@@ -281,22 +270,18 @@
         <h2 class="font-serif text-3xl sm:text-4xl text-[#0D1B2A] mt-1 mb-7">Counting Down To The Big Day</h2>
 
         <div class="grid grid-cols-4 gap-3 sm:gap-6 max-w-2xl mx-auto">
-          <!-- Days -->
           <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gold/25">
             <span id="days" class="block font-serif text-3xl sm:text-5xl font-bold text-[#0D1B2A]">00</span>
             <span class="text-[9px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1 block">Days</span>
           </div>
-          <!-- Hours -->
           <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gold/25">
             <span id="hours" class="block font-serif text-3xl sm:text-5xl font-bold text-[#0D1B2A]">00</span>
             <span class="text-[9px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1 block">Hours</span>
           </div>
-          <!-- Minutes -->
           <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gold/25">
             <span id="minutes" class="block font-serif text-3xl sm:text-5xl font-bold text-[#0D1B2A]">00</span>
             <span class="text-[9px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1 block">Minutes</span>
           </div>
-          <!-- Seconds -->
           <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gold/25">
             <span id="seconds" class="block font-serif text-3xl sm:text-5xl font-bold text-gold-dark">00</span>
             <span class="text-[9px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1 block">Seconds</span>
@@ -308,7 +293,6 @@
     <section id="functions" class="py-24 px-6 md:px-12 bg-ivory-100">
       <div class="max-w-6xl mx-auto">
         
-        <!-- Section Header with Centerpiece Insignia Placeholder -->
         <div class="text-center max-w-2xl mx-auto mb-16 reveal-scroll">
           <div class="w-12 h-12 rounded-full overflow-hidden mx-auto mb-3 border border-gold/40 p-0.5 bg-white shadow-sm flex items-center justify-center">
             <img src="0.png" alt="AR Monogram" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
@@ -319,15 +303,13 @@
           <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-3"></div>
         </div>
 
-        <!-- THREE LUXURY DARK FUNCTION CARDS -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          <!-- CARD 1: GAYE HOLUD / HALDI (Deep Charcoal-Amber & Warm Ochre) -->
+          <!-- CARD 1: GAYE HOLUD / HALDI -->
           <div class="rounded-3xl p-8 shadow-card-glow border border-cardDark-haldiBorder bg-gradient-to-b from-[#1C1304] via-[#2A1D07] to-[#140D02] text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between reveal-scroll">
             <div class="absolute -top-10 -right-10 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
             
             <div class="relative z-10">
-              <!-- Tag badge -->
               <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-amber-400/15 text-amber-300 border border-amber-400/30 mb-6">
                 <i data-lucide="sun" class="w-3 h-3"></i>
                 <span>Golden Morning Ritual</span>
@@ -338,7 +320,6 @@
                 Anointed with pure turmeric paste, joyful songs, fresh marigold garlands, and vibrant laughter to bestow radiance upon the bride and groom.
               </p>
 
-              <!-- Details list -->
               <div class="space-y-3.5 text-xs text-yellow-100/90 border-t border-amber-500/20 pt-5">
                 <div class="flex items-center space-x-3">
                   <i data-lucide="calendar" class="w-4 h-4 text-cardDark-haldiAccent"></i>
@@ -362,12 +343,11 @@
             </div>
           </div>
 
-          <!-- CARD 2: THE WEDDING / SHUBHO BIBAHO (Deep Sindoor Crimson Velvet) -->
+          <!-- CARD 2: THE WEDDING / SHUBHO BIBAHO -->
           <div class="rounded-3xl p-8 shadow-card-glow border-2 border-gold bg-gradient-to-b from-[#2E060E] via-[#3D0814] to-[#1A0307] text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between reveal-scroll">
             <div class="absolute -top-10 -right-10 w-40 h-40 bg-red-600/10 rounded-full blur-2xl pointer-events-none"></div>
 
             <div class="relative z-10">
-              <!-- Center Tag badge -->
               <span class="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-gold/20 text-gold-300 border border-gold/40 mb-6">
                 <i data-lucide="heart" class="w-3 h-3 text-red-400"></i>
                 <span>Sacred Shubho Bibaho</span>
@@ -378,7 +358,6 @@
                 The sacred union: Saat Paake Ghora, Shubho Drishti beneath the betel leaves, Mala Badal, and Sindoor Daan solemnizing eternal vows.
               </p>
 
-              <!-- Details list -->
               <div class="space-y-3.5 text-xs text-neutral-200 border-t border-white/15 pt-5">
                 <div class="flex items-center space-x-3">
                   <i data-lucide="calendar" class="w-4 h-4 text-gold-300"></i>
@@ -402,12 +381,11 @@
             </div>
           </div>
 
-          <!-- CARD 3: GRAND RECEPTION (Royal Midnight Aubergine / Violet Velvet) -->
+          <!-- CARD 3: GRAND RECEPTION -->
           <div class="rounded-3xl p-8 shadow-card-glow border border-cardDark-receptionBorder bg-gradient-to-b from-[#180720] via-[#240C2E] to-[#100316] text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between reveal-scroll">
             <div class="absolute -top-10 -right-10 w-40 h-40 bg-purple-600/10 rounded-full blur-2xl pointer-events-none"></div>
 
             <div class="relative z-10">
-              <!-- Tag badge -->
               <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-purple-800/40 text-purple-200 border border-purple-500/40 mb-6">
                 <i data-lucide="wine" class="w-3 h-3"></i>
                 <span>Bou Bhaat &amp; Grand Gala</span>
@@ -418,7 +396,6 @@
                 An evening of celebration, delicious feast, and welcoming the newlywed couple into an auspicious new beginning surrounded by dearest friends and family.
               </p>
 
-              <!-- Details list -->
               <div class="space-y-3.5 text-xs text-purple-100 border-t border-purple-500/20 pt-5">
                 <div class="flex items-center space-x-3">
                   <i data-lucide="calendar" class="w-4 h-4 text-gold-300"></i>
@@ -491,7 +468,6 @@
             </div>
           </div>
 
-          <!-- Interactive Google Maps Frame -->
           <div class="lg:col-span-6 reveal-scroll">
             <div class="bg-white rounded-3xl p-4 border border-gold/30 shadow-regal overflow-hidden">
               <div class="w-full h-80 rounded-2xl overflow-hidden relative">
@@ -512,7 +488,6 @@
     <section id="blessings" class="py-24 px-6 md:px-12 bg-ivory-100 text-center">
       <div class="max-w-3xl mx-auto">
         
-        <!-- Insignia Placeholder in Blessings Section -->
         <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-5 border border-gold/50 p-0.5 bg-white shadow-sm flex items-center justify-center reveal-scroll">
           <img src="0.png" alt="AR Monogram" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
           <span class="hidden font-cinzel text-sm font-bold text-gold-dark">AR</span>
@@ -525,7 +500,6 @@
           "Having you share in our happiness as we embark on this sacred chapter means everything to our families."
         </p>
 
-        <!-- Direct WhatsApp Blessing Action Box -->
         <div class="bg-white rounded-3xl p-8 border border-gold/30 shadow-regal reveal-scroll max-w-xl mx-auto">
           <p class="text-xs uppercase tracking-[0.25em] text-neutral-500 mb-2 font-semibold">Instant Wishes</p>
           <h3 class="font-serif text-2xl text-[#0D1B2A] mb-4">Send Congratulations to Anand &amp; Roshni</h3>
@@ -544,20 +518,19 @@
       </div>
     </section>
 
+    <!-- Audio Element -->
     <audio id="weddingMusicPlayer" loop preload="auto">
-      <!-- You can easily replace the URL below with 'music.mp3' in your directory -->
-      <source src="Kudmayi.mp3" type="audio/mpeg">
-      <source src="Kudmayi.mp3" type="audio/mpeg">
+      <source src="LMLYD.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Floating Audio Control Capsule (Bottom Left) -->
     <aside class="fixed bottom-6 left-6 z-40 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-regal border border-gold/40 flex items-center space-x-3 text-neutral-800 max-w-[280px]">
-      <button onclick="toggleWeddingMusic()" id="podPlayBtn" class="w-10 h-10 rounded-full bg-[#0D1B2A] hover:bg-black text-gold-300 flex items-center justify-center shrink-0 shadow-sm transition-all focus:outline-none" title="Play / Pause Wedding Melody">
+      <button onclick="toggleWeddingMusic()" id="podPlayBtn" class="w-10 h-10 rounded-full bg-[#0D1B2A] hover:bg-black text-gold-300 flex items-center justify-center shrink-0 shadow-sm transition-all focus:outline-none" title="Play / Pause Love Me Like You Do">
         <i data-lucide="music" id="podPlayIcon" class="w-4 h-4 text-gold"></i>
       </button>
       <div class="overflow-hidden">
         <span class="text-[10px] uppercase tracking-widest text-gold-dark font-semibold block truncate">Wedding Music</span>
-        <span id="podTrackStatus" class="text-xs text-neutral-800 font-medium truncate block">Shehnai &amp; Flute Melodies</span>
+        <span id="podTrackStatus" class="text-xs text-neutral-800 font-medium truncate block"></span>
       </div>
     </aside>
 
@@ -566,7 +539,6 @@
   <footer class="py-14 bg-[#080E17] text-neutral-300 border-t border-gold/30 px-6 text-center">
     <div class="max-w-md mx-auto space-y-4">
       
-      <!-- Footer Monogram Placeholder -->
       <div class="w-14 h-14 rounded-full overflow-hidden mx-auto border border-gold/50 p-0.5 bg-white shadow-sm flex items-center justify-center">
         <img src="0.png" alt="AR Monogram" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
         <span class="hidden font-cinzel text-xs font-bold text-gold-dark">AR</span>
@@ -655,7 +627,7 @@
     }
 
     /* ==========================================================================
-       4. AUDIO CONTROLS WITH WEB-AUDIO API HARP/CHIME SYNTHESIZER FALLBACK
+       4. AUDIO CONTROLS WITH AUTO-PLAY & CHIME SYNTHESIZER FALLBACK
        ========================================================================== */
     const weddingAudio = document.getElementById('weddingMusicPlayer');
     let isPlaying = false;
@@ -695,9 +667,8 @@
             headerVis.classList.remove('hidden');
             headerVis.classList.add('flex');
             headerText.innerText = "Pause";
-            podStatus.innerText = "Playing Wedding Melody";
+            podStatus.innerText = "Love Me Like You Do";
           }).catch(() => {
-            // Web Audio API chime fallback
             if (!synthAudioCtx) synthAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
             if (synthAudioCtx.state === 'suspended') synthAudioCtx.resume();
             clearInterval(synthTimer);
@@ -708,7 +679,7 @@
             headerVis.classList.remove('hidden');
             headerVis.classList.add('flex');
             headerText.innerText = "Pause";
-            podStatus.innerText = "Playing Chime Harmonies";
+            podStatus.innerText = "";
           });
         }
       } else {
@@ -721,6 +692,34 @@
         podStatus.innerText = "Music Paused";
       }
     }
+
+    // --- AUTO-PLAY MUSIC ON OPEN / FIRST GUEST INTERACTION ---
+    function attemptAutoPlay() {
+      const playPromise = weddingAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          toggleWeddingMusic(true);
+          cleanupAutoPlayListeners();
+        }).catch(() => {
+          // If blocked by browser autoplay rules, start as soon as user taps or scrolls
+          const startOnInteraction = () => {
+            toggleWeddingMusic(true);
+            cleanupAutoPlayListeners();
+          };
+          window.addEventListener('click', startOnInteraction, { once: true });
+          window.addEventListener('touchstart', startOnInteraction, { once: true });
+          window.addEventListener('scroll', startOnInteraction, { once: true });
+        });
+      }
+    }
+
+    function cleanupAutoPlayListeners() {
+      window.removeEventListener('click', attemptAutoPlay);
+      window.removeEventListener('touchstart', attemptAutoPlay);
+      window.removeEventListener('scroll', attemptAutoPlay);
+    }
+
+    window.addEventListener('DOMContentLoaded', attemptAutoPlay);
 
     /* ==========================================================================
        5. COPY ADDRESS & CALENDAR GENERATOR
@@ -812,7 +811,6 @@
         this.angle = Math.random() * Math.PI * 2;
         this.angularSpeed = (Math.random() - 0.5) * 0.02;
         this.opacity = Math.random() * 0.45 + 0.3;
-        // 0: Soft ivory/rose petal, 1: Royal navy/indigo leaf, 2: Metallic gold foil leaf
         this.type = Math.floor(Math.random() * 3);
       }
 
@@ -832,21 +830,17 @@
         ctx.rotate(this.angle);
         ctx.beginPath();
 
-        // Realistic curved petal & botanical leaf silhouette using Bezier curves
         ctx.moveTo(0, -this.size);
         ctx.bezierCurveTo(this.size * 0.75, -this.size * 0.5, this.size * 0.65, this.size * 0.6, 0, this.size);
         ctx.bezierCurveTo(-this.size * 0.65, this.size * 0.6, -this.size * 0.75, -this.size * 0.5, 0, -this.size);
 
         if (this.type === 0) {
-          // Soft rose/orchid blossom petal
           ctx.fillStyle = `rgba(250, 235, 230, ${this.opacity})`;
           ctx.strokeStyle = `rgba(212, 175, 55, ${this.opacity * 0.35})`;
         } else if (this.type === 1) {
-          // Royal navy botanical leaf (echoing the monogram's blue accent)
           ctx.fillStyle = `rgba(13, 27, 42, ${this.opacity * 0.85})`;
           ctx.strokeStyle = `rgba(212, 175, 55, ${this.opacity * 0.4})`;
         } else {
-          // Royal gold leaf
           ctx.fillStyle = `rgba(218, 175, 55, ${this.opacity})`;
           ctx.strokeStyle = `rgba(160, 120, 20, ${this.opacity * 0.6})`;
         }
@@ -855,7 +849,6 @@
         ctx.fill();
         ctx.stroke();
 
-        // Delicate central vein for leaves
         if (this.type !== 0) {
           ctx.beginPath();
           ctx.moveTo(0, -this.size * 0.75);
